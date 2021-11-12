@@ -1,0 +1,9 @@
+node_modules
+scss
+gulpfile.js
+package-lock.json
+package.json
+.vs
+.DS_Store
+.AppleDouble
+.LSOverride
