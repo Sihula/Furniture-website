@@ -18,4 +18,12 @@ $(function () {
     autoplay: true
   });
 
+  var mixer = mixitup('.galery__inner', {
+    load: {
+      filter: '.living'
+    }
+  });
+
+
+
 });
