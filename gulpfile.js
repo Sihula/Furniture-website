@@ -40,6 +40,7 @@ function scripts() {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js',
   ])
@@ -61,6 +62,7 @@ function build() {
 function styles() {
   return src([
     'app/scss/style.scss',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
     'node_modules/normalize.css/normalize.css',
   ])
 
