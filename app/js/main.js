@@ -26,6 +26,13 @@ $(function () {
 
   });
 
+  $('.article-slider-box').slick({
+    prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src="images/arrow-slideleft.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="images/arrow-slideright.svg" alt=""></button>',
+
+
+  });
+
 
 
   var mixer = mixitup('.galery__inner', {
