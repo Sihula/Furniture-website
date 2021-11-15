@@ -18,12 +18,15 @@
     border: none;
     cursor: pointer;
   }
+  &__btn-menu{
+    display: none;
+  }
 }
 .logo{
   margin: 0 auto;
 }
 .menu {
- 
+  
   padding-right: 15px;
   &__list {
     display: flex;
@@ -38,7 +41,7 @@
   }
 }
 .menu__list-link--active{
-  padding-bottom: 4px;
+    padding-bottom: 4px;
   position: relative;
   &::after{
     content: '';
@@ -127,21 +130,22 @@
   padding: 13px 14px;
   position: relative;
   z-index: 100;
-
   &__list {
     display: flex;
-
+    overflow-x: auto;
+  }
+  &__item{
+    position: relative;
+    padding-right: 8px;
   }
   &__item::after{
     content: '/';
-    margin-left: -2px;
-    margin-right: 3px;
+    position: absolute;
   } 
 &__item:last-child::after{
   display: none;
 }
-  
-  &__link {
+    &__link {
     font-size: 14px;
     color: $default;
   }
@@ -1010,7 +1014,7 @@ margin-left: 0;
     top: 0;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgb(#fff, .6) ;
     color: $title;
@@ -1347,3 +1351,5 @@ display: flex;
 
 
 // END FOOTER
+
+@import 'media';
